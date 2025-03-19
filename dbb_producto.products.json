@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "67da4785831885f24ec6dd58"
+  },
+  "name": "silla",
+  "price": "1200",
+  "quantity": "24"
+},
+{
+  "_id": {
+    "$oid": "67daffa82509a2568e997c44"
+  },
+  "name": "mesa",
+  "price": "300",
+  "quantity": "3"
+},
+{
+  "_id": {
+    "$oid": "67db0f9038e24a0124e6fec2"
+  },
+  "name": "cama",
+  "price": "1300",
+  "quantity": "45"
+},
+{
+  "_id": {
+    "$oid": "67db16d138e24a0124e6fec3"
+  },
+  "name": "Florero",
+  "price": "30000",
+  "quantity": "8"
+},
+{
+  "_id": {
+    "$oid": "67db16da38e24a0124e6fec4"
+  },
+  "name": "Lápiz",
+  "price": "2000",
+  "quantity": "3"
+}]
