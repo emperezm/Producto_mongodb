@@ -26,6 +26,8 @@
                             <input type="text" class="form-control mb-3" name="price">
                             <label>Cantidad</label>
                             <input type="text" class="form-control mb-3" name="quantity">
+                            <label>Descripción</label>
+                            <input type="text" class="form-control mb-3" name="description">
                             <button class="btn btn-primary" type="submit">Guardar</button>
                         </form>
                     </div>
@@ -49,6 +51,8 @@
                                         <input type="text" class="form-control" value="{{product.quantity}}" name="quantity">
                                         <small>Precio</small>
                                         <input type="text" class="form-control" value="{{product.price}}" name="price">
+                                        <small>Descripción</small>
+                                        <input type="text" class="form-control" value="{{product.description}}" name="description">
                                         <button class="btn btn-primary btn-sm" type="submit">Editar</button>
                                         <a href="{{url_for('delete_product', product_name=product.name)}}" class="btn btn-danger btn-sm">Eliminar</a>
                                     </form>
