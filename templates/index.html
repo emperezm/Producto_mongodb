@@ -20,7 +20,7 @@
                     </div>
                     <div class="card-body">
                         <form action="/products" method="POST">
-                            <label>Nombre</label>
+                            <label>Nombre Producto</label>
                             <input type="text" class="form-control mb-3" name="name">
                             <label>Precio</label>
                             <input type="text" class="form-control mb-3" name="price">
@@ -45,9 +45,9 @@
                                 <li class="list-group-item mb-3">
                                     <form action="/edit/{{product.name}}" method="POST">
                                         <input type="text" class="form-control" value="{{product.name}}" name="name">
-                                        <small>CANTIDAD</small>
+                                        <small>Cantidad</small>
                                         <input type="text" class="form-control" value="{{product.quantity}}" name="quantity">
-                                        <small>PRECIO</small>
+                                        <small>Precio</small>
                                         <input type="text" class="form-control" value="{{product.price}}" name="price">
                                         <button class="btn btn-primary btn-sm" type="submit">Editar</button>
                                         <a href="{{url_for('delete_product', product_name=product.name)}}" class="btn btn-danger btn-sm">Eliminar</a>
