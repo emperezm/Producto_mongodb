@@ -20,14 +20,17 @@ def add_products(): #cambio
     name = request.form['name']
     price = request.form['price']
     quantity = request.form['quantity']
+    description = request.form['description']
 
     if name and price and quantity:
-        product = Product(name, price, quantity)
+        product = Product(name, price, quantity,description)
         products.insert_one(product.toDBCollection())
         Response=jsonify({
             'name': name,
             'price': price,
-            'quantity': quantity,})
+            'quantity': quantity,
+            'description': description})
+
         return redirect(url_for('home'))
     else: 
         return notFound()
@@ -46,9 +49,10 @@ def edit_product(product_name):
     name = request.form['name']
     price = request.form['price']
     quantity = request.form['quantity']
+    description = request.form['description']
 
     if name and price and quantity:
-        products.update_one({'name': product_name}, {'$set': {'name': name, 'price': price, 'quantity': quantity}})
+        products.update_one({'name': product_name}, {'$set': {'name': name, 'price': price, 'quantity': quantity, 'description': description}})
         Response=jsonify({'message': 'producto'+ product_name + 'actualizado correctamente'})
         return redirect(url_for('home'))
     else:
