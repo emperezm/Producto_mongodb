@@ -17,10 +17,10 @@ def home():
 @app.route('/products', methods=['POST'])
 def add_products(): #cambio
     products=db['products'] 
-    name = request.form['name']
-    price = request.form['price']
-    quantity = request.form['quantity']
-    description = request.form['description']
+    name = request.form.get('name')
+    price = request.form.get('price')
+    quantity = request.form.get('quantity')
+    description = request.form.get('description')
 
     if name and price and quantity:
         product = Product(name, price, quantity,description)
