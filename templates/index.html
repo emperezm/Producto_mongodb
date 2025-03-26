@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 </head>
 <body>
     <div class="container">
@@ -21,13 +20,13 @@
                     <div class="card-body">
                         <form action="/products" method="POST">
                             <label>Nombre Producto</label>
-                            <input type="text" class="form-control mb-3" name="name">
+                            <input type="text" class="form-control mb-3" name="nombre_producto"> <!-- Cambio aquí -->
                             <label>Precio</label>
-                            <input type="text" class="form-control mb-3" name="price">
+                            <input type="text" class="form-control mb-3" name="precio"> <!-- Cambio aquí -->
                             <label>Cantidad</label>
-                            <input type="text" class="form-control mb-3" name="quantity">
+                            <input type="text" class="form-control mb-3" name="cantidad"> <!-- Cambio aquí -->
                             <label>Descripción</label>
-                            <input type="text" class="form-control mb-3" name="description">
+                            <input type="text" class="form-control mb-3" name="descripcion"> <!-- Cambio aquí -->
                             <button class="btn btn-primary" type="submit">Guardar</button>
                         </form>
                     </div>
@@ -38,29 +37,30 @@
                 <div class="card">
                     <div class="card-header">
                         <h5 class="text-center">Lista De Productos</h5>
-                </div>
-                <div class="card-body">
-                    <ul class="list-group">
-                        <div class="row row-col-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
-                            {% for product in products %}
-                            <div class="col">
-                                <li class="list-group-item mb-3">
-                                    <form action="/edit/{{product.name}}" method="POST">
-                                        <input type="text" class="form-control" value="{{product.name}}" name="name">
-                                        <small>Cantidad</small>
-                                        <input type="text" class="form-control" value="{{product.quantity}}" name="quantity">
-                                        <small>Precio</small>
-                                        <input type="text" class="form-control" value="{{product.price}}" name="price">
-                                        <small>Descripción</small>
-                                        <input type="text" class="form-control" value="{{product.description}}" name="description">
-                                        <button class="btn btn-primary btn-sm" type="submit">Editar</button>
-                                        <a href="{{url_for('delete_product', product_name=product.name)}}" class="btn btn-danger btn-sm">Eliminar</a>
-                                    </form>
-                                </li>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <div class="row row-col-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+                                {% for product in products %}
+                                <div class="col">
+                                    <li class="list-group-item mb-3">
+                                        <form action="/edit/{{ product.nombre_producto }}" method="POST"> <!-- Cambio aquí -->
+                                            <input type="text" class="form-control" value="{{ product.nombre_producto }}" name="nombre_producto"> <!-- Cambio aquí -->
+                                            <small>Cantidad</small>
+                                            <input type="text" class="form-control" value="{{ product.cantidad }}" name="cantidad"> <!-- Cambio aquí -->
+                                            <small>Precio</small>
+                                            <input type="text" class="form-control" value="{{ product.precio }}" name="precio"> <!-- Cambio aquí -->
+                                            <small>Descripción</small>
+                                            <input type="text" class="form-control" value="{{ product.descripcion }}" name="descripcion"> <!-- Cambio aquí -->
+                                            <button class="btn btn-primary btn-sm" type="submit">Editar</button>
+                                            <a href="{{ url_for('delete_product', product_name=product.nombre_producto) }}" class="btn btn-danger btn-sm">Eliminar</a> <!-- Cambio aquí -->
+                                        </form>
+                                    </li>
+                                </div>
+                                {% endfor %}
                             </div>
-                            {% endfor %}
-                        </div>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
