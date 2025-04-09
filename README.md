@@ -1,6 +1,6 @@
 # Sistema de Gestión de Inventario
 
-![Sistema de Gestión de Inventario](https://github.com/emperezm/Producto_mongodb)
+![Sistema de Gestión de Inventario](capturas/logo.svg)
 
 ## Tabla de Contenido
 
@@ -95,7 +95,7 @@ El sistema ofrece funcionalidades completas de CRUD (Crear, Leer, Actualizar y E
    def dbConnection():
        try:
            client = MongoClient('mongodb://localhost:27017/')
-           db = client['inventario_db']
+           db = client['dbb_producto']
            return db
        except Exception as e:
            print(f"Error de conexión a MongoDB: {e}")
@@ -133,20 +133,30 @@ sistema-inventario/
 └── README.md               # Documentación del proyecto
 ```
 ## Diagramas
+![Diagrama de Casos de Uso](capturas/casos-uso.jpeg)
+
+*Diagrama de casos de uso.*
+
+![Diagrama de Clases](capturas/clases.jpeg)
+
+*Diagrama de clases.*
 
 
 ## Capturas de Pantalla
 
 ### Inicio de Sesión
 ![Pantalla de Inicio de Sesión](capturas/login.png)
+
 *Pantalla de autenticación para acceder al sistema.*
 
 ### Dashboard de Inventario
 ![Dashboard Principal](capturas/inventario.png)
+
 *Panel principal con listado de productos, indicadores de stock y opciones de gestión.*
 
 ### Formulario de Producto
 ![Formulario de Producto](capturas/agregar-producto.png)
+
 *Interfaz para agregar o modificar información de productos en el inventario.*
 
 ## Uso
