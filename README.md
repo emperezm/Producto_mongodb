@@ -10,9 +10,10 @@
 4. [Instalación](#instalación)
 5. [Configuración](#configuración)
 6. [Estructura del Proyecto](#estructura-del-proyecto)
-7. [Capturas de Pantalla](#capturas-de-pantalla)
-8. [Uso](#uso)
-9. [Contribuciones](#contribuciones)
+7. [Diagramas](#diagramas)
+8. [Capturas de Pantalla](#capturas-de-pantalla)
+9. [Uso](#uso)
+10. [Contribuciones](#contribuciones)
 
 ## Descripción
 
@@ -157,12 +158,7 @@ sistema-inventario/
 ├── app.py                  # Punto de entrada principal
 ├── database.py             # Configuración de conexión a la base de datos
 ├── product.py              # Modelo de producto
-├── requirements.txt        # Dependencias del proyecto
 │
-├── static/                 # Archivos estáticos
-│   ├── css/                # Hojas de estilo
-│   ├── js/                 # Scripts de JavaScript
-│   └── img/                # Imágenes
 │
 ├── templates/              # Plantillas HTML
 │   ├── index.html          # Dashboard principal
@@ -171,6 +167,14 @@ sistema-inventario/
 │
 └── README.md               # Documentación del proyecto
 ```
+## Estructura del Proyecto
+![Diagrama de Casos de Uso](capturas/casos-uso.jpeg)
+
+*Diagrama de casos de uso.*
+
+![Diagrama de Clases](capturas/clases.jpeg)
+
+*Diagrama de clases.*
 
 ## Capturas de Pantalla
 
