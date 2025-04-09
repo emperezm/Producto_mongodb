@@ -1,6 +1,6 @@
 # Sistema de Gestión de Inventario
 
-![Sistema de Gestión de Inventario](https://github.com/emperezm/Producto_mongodb)
+![Sistema de Gestión de Inventario](capturas/logo.svg)
 
 ## Tabla de Contenido
 
@@ -176,14 +176,17 @@ sistema-inventario/
 
 ### Inicio de Sesión
 ![Pantalla de Inicio de Sesión](capturas/login.png)
+
 *Pantalla de autenticación para acceder al sistema.*
 
 ### Dashboard de Inventario
 ![Dashboard Principal](capturas/inventario.png)
+
 *Panel principal con listado de productos, indicadores de stock y opciones de gestión.*
 
 ### Formulario de Producto
 ![Formulario de Producto](capturas/agregar-producto.png)
+
 *Interfaz para agregar o modificar información de productos en el inventario.*
 
 ## Uso
