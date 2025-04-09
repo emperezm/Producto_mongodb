@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "67f5ec91204b37849c1cf4c7"
+  },
+  "username": "emperezm",
+  "password": "scrypt:32768:8:1$fYTG1QTL3iPaM0J6$e3856c5e7e36ccbfc0214ce7fa32927c95af250fce86c4d02d97b23cc08ffc8fc42656121f8664f6c8fbbb6174bef6ecb6e3b61568798f64c8b088e6f282e60a"
+},
+{
+  "_id": {
+    "$oid": "67f674d5176f6929dc9c31bb"
+  },
+  "username": "Mari",
+  "password": "scrypt:32768:8:1$9XYKRXQhuQKm56j4$d1d2ced154c056c39064a0ade9bf819fd2e73c0904f14958f543bc593db49f32fb60b5d30b0c7e4d2132e672b958834c5ba58baa65817d19e31bd0c7d99ae38a"
+}]

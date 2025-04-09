@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "67f67544176f6929dc9c31bc"
+  },
+  "nombre_producto": "Auriculares Bluetooth JBL Tune 510BT",
+  "precio": 59.99,
+  "cantidad": 12,
+  "descripcion": "Auriculares inalámbricos con sonido JBL Pure Bass, batería de hasta 40 horas y carga rápida."
+},
+{
+  "_id": {
+    "$oid": "67f6756f176f6929dc9c31bd"
+  },
+  "nombre_producto": "Laptop Lenovo IdeaPad 3 - Intel Core i5",
+  "precio": 549,
+  "cantidad": 8,
+  "descripcion": "Portátil de 15.6\", 8GB RAM, 256GB SSD, ideal para trabajo y estudio diario."
+},
+{
+  "_id": {
+    "$oid": "67f6759e176f6929dc9c31be"
+  },
+  "nombre_producto": "Cafetera Nespresso Essenza Mini",
+  "precio": 129.99,
+  "cantidad": 5,
+  "descripcion": "Cafetera compacta para cápsulas Nespresso, fácil de usar y perfecta para espacios pequeños."
+},
+{
+  "_id": {
+    "$oid": "67f675c7176f6929dc9c31bf"
+  },
+  "nombre_producto": "Smartphone Samsung Galaxy A54 5G",
+  "precio": 349.99,
+  "cantidad": 25,
+  "descripcion": "Pantalla AMOLED de 6.4\", cámara triple, batería de larga duración y conectividad 5G."
+},
+{
+  "_id": {
+    "$oid": "67f675fc176f6929dc9c31c0"
+  },
+  "nombre_producto": "Mochila Xiaomi Mi Casual Daypack",
+  "precio": 249.99,
+  "cantidad": 50,
+  "descripcion": "Mochila liviana y resistente al agua, ideal para el día a día o llevar tu laptop."
+},
+{
+  "_id": {
+    "$oid": "67f67633176f6929dc9c31c1"
+  },
+  "nombre_producto": "Reloj Inteligente Amazfit Bip 3 Pro",
+  "precio": 69.99,
+  "cantidad": 3,
+  "descripcion": "Smartwatch con GPS, monitor de sueño, frecuencia cardíaca y más de 60 modos deportivos."
+},
+{
+  "_id": {
+    "$oid": "67f67662176f6929dc9c31c2"
+  },
+  "nombre_producto": "Lámpara de escritorio LED con carga inalámbrica",
+  "precio": 394.99,
+  "cantidad": 17,
+  "descripcion": "Lámpara táctil con 3 niveles de brillo, puerto USB y base de carga Qi para celulares."
+},
+{
+  "_id": {
+    "$oid": "67f67694176f6929dc9c31c3"
+  },
+  "nombre_producto": "Silla Gamer Cougar Armor One",
+  "precio": 189.99,
+  "cantidad": 9,
+  "descripcion": " Silla ergonómica con soporte lumbar, reclinación de 180° y diseño resistente para largas sesiones."
+},
+{
+  "_id": {
+    "$oid": "67f676fb176f6929dc9c31c4"
+  },
+  "nombre_producto": "Silla Gamer Razer Iskur X",
+  "precio": 299.88,
+  "cantidad": 3,
+  "descripcion": "Silla ergonómica con diseño resistente, respaldo reclinable, cojín lumbar fijo y tapizado de piel sintética multicapa ideal para largas sesiones de juego."
+},
+{
+  "_id": {
+    "$oid": "67f6771a176f6929dc9c31c5"
+  },
+  "nombre_producto": "Silla Gamer DXRacer Formula Series",
+  "precio": 329.99,
+  "cantidad": 2,
+  "descripcion": " Silla premium con diseño tipo butaca de auto, estructura de acero, reposabrazos ajustables en 3D y soporte lumbar y cervical incluidos."
+}]
