@@ -205,10 +205,10 @@ def delete_product(product_name):
 @app.route('/edit/<string:product_name>', methods=['POST'])
 @login_required
 def edit_product(product_name):
-    nombre_producto = request.form.get('name')  
-    precio = request.form.get('price')  
-    cantidad = request.form.get('quantity')  
-    descripcion = request.form.get('description')  
+    nombre_producto = request.form.get('nombre_producto')
+    precio = request.form.get('precio')
+    cantidad = request.form.get('cantidad')
+    descripcion = request.form.get('descripcion')
 
     if nombre_producto and precio and cantidad:
         cursor.execute("UPDATE Inventario SET nombre_producto = ?, precio = ?, cantidad = ?, descripcion = ? WHERE nombre_producto = ?", 
