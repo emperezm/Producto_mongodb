@@ -167,7 +167,7 @@ sistema-inventario/
 │
 └── README.md               # Documentación del proyecto
 ```
-## Estructura del Proyecto
+## Diagramas
 ![Diagrama de Casos de Uso](capturas/casos-uso.jpeg)
 
 *Diagrama de casos de uso.*
